@@ -1,3 +1,4 @@
+/*Kleuren en Lettertyp*/
 :root {
   --color-surface: rgb(246, 245, 242);
   --color-card: rgb(255, 255, 255);
@@ -9,13 +10,24 @@
   --color-accent-dark: rgb(150, 88, 10);
   --color-valid: rgb(42, 132, 72);
   --color-invalid: rgb(178, 48, 48);
+
+
   --font-family: Georgia, "Times New Roman", Times, serif;
   --font-body: "Helvetica Neue", Arial, sans-serif;
+
+/*Breakpoints*/
 }
-@media (min-width: 640px) {
+/*tablet*/
+@media (min-width: 640px) {   
+     display: flex;
+    align-items: center;
+    justify-content: center;
 }
+/*dekstop*/
 @media (min-width: 1024px) {
 }
+
+/* Algemene lay-out*/
 body {
   display: grid;
   grid-template-areas:
@@ -31,4 +43,23 @@ main {
   grid-area: main;
   min-width: 0;
   min-width: auto;
+  width: 100%;
+  max-width: 70rem;
+  
+}
+/* Header*/ 
+#Logo{
+
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    order: 1;
+    flex-wrap: nowrap;
+    order:0;
+}
+/*Hero*/
+::after {
+    content: "↓";
+}
+@keyframes{
+    animation: arrow 1.8s infinite ;
 }
