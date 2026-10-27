@@ -25,6 +25,7 @@
 }
 /*dekstop*/
 @media (min-width: 1024px) {
+    flex-wrap: nowrap;
 }
 
 /* Algemene lay-out*/
@@ -38,6 +39,10 @@ body {
   min-height: 100vh;
   grid-template-rows: auto auto 1fr auto;
   grid-template-columns: 1fr;
+  background-color: var(--color-surface);
+  color: var(--color-link);
+  font-family: var(--font-body);
+  line-height: 1.6;
 }
 main {
   grid-area: main;
