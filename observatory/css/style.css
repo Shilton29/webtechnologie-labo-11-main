@@ -1,0 +1,34 @@
+:root {
+  --color-surface: rgb(246, 245, 242);
+  --color-card: rgb(255, 255, 255);
+  --color-link: rgb(26, 28, 38);
+  --color-muted: rgb(96, 100, 115);
+  --color-line: rgb(214, 212, 205);
+  --color-on-dark: rgb(236, 238, 246);
+  --color-accent: rgb(242, 160, 58);
+  --color-accent-dark: rgb(150, 88, 10);
+  --color-valid: rgb(42, 132, 72);
+  --color-invalid: rgb(178, 48, 48);
+  --font-family: Georgia, "Times New Roman", Times, serif;
+  --font-body: "Helvetica Neue", Arial, sans-serif;
+}
+@media (min-width: 640px) {
+}
+@media (min-width: 1024px) {
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "main"
+    "footer";
+  min-height: 100vh;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr;
+}
+main {
+  grid-area: main;
+  min-width: 0;
+  min-width: auto;
+}
