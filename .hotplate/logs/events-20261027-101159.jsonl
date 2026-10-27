@@ -1,0 +1,5 @@
+{"ts":"2026-10-27T10:11:59.293Z","session":"20261027-101159","kind":"server_start","data":{"port":5500,"host":"0.0.0.0","root":"c:\\Users\\PC\\Desktop\\School\\Web Technologie\\labo11\\webtechnologie-labo-11-main","https":false,"live_reload":true}}
+{"ts":"2026-10-27T10:11:59.463Z","session":"20261027-101159","kind":"http_request","data":{"method":"GET","path":"/","status":200,"duration_ms":0}}
+{"ts":"2026-10-27T10:11:59.598Z","session":"20261027-101159","kind":"ws_connect","data":{"client_id":"c0","url":"http://localhost:5500/","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36","viewport":[1504,834]}}
+{"ts":"2026-10-27T10:12:01.474Z","session":"20261027-101159","kind":"ws_disconnect","data":{"client_id":"c0"}}
+{"ts":"2026-10-27T10:15:18.326Z","session":"20261027-101159","kind":"file_change","data":{"path":"observatory/css/style.css","ext":"css","change":"remove"}}

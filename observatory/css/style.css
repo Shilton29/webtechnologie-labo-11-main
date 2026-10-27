@@ -11,17 +11,16 @@
   --color-valid: rgb(42, 132, 72);
   --color-invalid: rgb(178, 48, 48);
 
-
   --font-family: Georgia, "Times New Roman", Times, serif;
   --font-body: "Helvetica Neue", Arial, sans-serif;
 
-/*Breakpoints*/
+  /*Breakpoints*/
 }
 /*tablet*/
-@media (min-width: 640px) {   
-     display: flex;
-    align-items: center;
-    justify-content: center;
+@media (min-width: 640px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*dekstop*/
 @media (min-width: 1024px) {
@@ -50,21 +49,29 @@ main {
   min-width: auto;
   width: 100%;
   max-width: 70rem;
-  
 }
-/* Header*/ 
-#Logo{
-
-    flex-wrap: wrap;
-    flex-basis: 100%;
-    order: 1;
-    flex-wrap: nowrap;
-    order:0;
+/* Header*/
+#Logo {
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  order: 1;
+  flex-wrap: nowrap;
+  order: 0;
 }
 /*Hero*/
 ::after {
-    content: "↓";
+  content: "↓";
+  font-size: 2rem;
+  animation: arrow-bounce 1.8s infinite;
 }
-@keyframes{
-    animation: arrow 1.8s infinite ;
+
+@keyframes arrow-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
 }
